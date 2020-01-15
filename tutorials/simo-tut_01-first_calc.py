@@ -56,7 +56,7 @@ AC_ival = 'All'
 # to save the geometry and mesh as png files in backend/fortran/msh/
 wguide = objects.Struct(unitcell_x,inc_a_x,unitcell_y,inc_a_y,inc_shape,
                         material_bkg=materials.Vacuum,
-                        material_a=materials.As2S3_2016_Smith,
+                        material_a=materials.Si_2016_Smith,
                         lc_bkg=1, # in vacuum background
                         lc2=600.0, # on cylinder surfaces
                         lc3=300.0, # on cylinder center
@@ -121,7 +121,7 @@ print("\n SBS_gain PE contribution \n", masked_PE)
 print("SBS_gain MB contribution \n", masked_MB)
 print("SBS_gain total \n", masked)
 print("SBS_gain linewidth [Hz] \n", linewidth_Hz)
-
+print("alpha [Hz] \n", alpha )
 end = time.time()
 print("\n Simulation time (sec.)", (end - start))
 
